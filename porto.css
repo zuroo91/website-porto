@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+h1{
+    color: brown;
+    font-size: 50px; 
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top:0px;
+    color: white;
+    background-color: pink;
+    padding-top: 80px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: gray;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-family:"Oswald", sans-serif ;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    transition: color 0.3s ease;
+    font-family:"Oswald", sans-serif  ;
+}
+
+.menu a:hover {
+    color: maroon;
+}
+
+.intro{
+    color: white;
+    max-width: 600px;
+    flex: 1;
+}
+.deks{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    font-size: 20px;
+}
+.profile-photo{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#home{
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+    gap: 40;
+}
+.section{
+    padding: 50px 10px;
+}
+#about{
+    background-color: #fdf1f4;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin: 0;
+}
+h2{
+    font-family: "Oswald", sans-serif ;
+    margin-top: 100px;
+    color: brown;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 100px;
+}
+
+.about-card{
+    background-color: maroon;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h3{
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 1.2rem;
+}
+.about-card p{
+    color: white;
+    font-size: 1rem;
+}
+
+.lokasi-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.lokasi-icon{
+    font-size: 40px;
+    color: maroon;
+   transition: 0.2s ease;
+}
+.lokasi-icon:hover{
+    transform: scale(1.2);
+}
+
+.alamat-text{
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+}
+#contact{
+    background-color: #fdf1f4;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    margin: 0;
+}
+.contact-section{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.contact-photo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border:5px solid maroon;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.text h2{
+    color: maroon;
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+}
+.text p{
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.sosmed{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sosmed a{
+    color: maroon;
+    font-size: 30px;
+    transition: 0.3s ease;
+}
+
+.sosmed a:hover{
+    transform: scale(1.2);
+}
+.dark-mode #home,
+.dark-mode #contact {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+#darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+.dark-mode #darkModeToggle {
+    background-color: #333;
+    color: white;
+}
+.dark-mode{
+    background-color: #121212;
+    color: #f0f0f0;
+}
+.dark-mode .nav{
+    background-color: #1f1f1f;
+}
+.dark-mode .about-card{
+    background-color: #333;
+}
+.dark-mode .alamat-text{
+    color: black;
+}
+.dark-mode .lokasi-icon{
+    color: #333;
+}
+.dark-mode .contact-container{
+    background-color: #222;
+    color: #f0f0f0;
+}
+.dark-mode .text h2{
+    color: #ffb3b3;
+}
+.dark-mode .text p{
+    color: #ccc;
+}
+.dark-mode .sosmed a{
+    color: #ff8c8c;
+}
